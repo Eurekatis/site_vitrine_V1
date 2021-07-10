@@ -5,21 +5,21 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: heading
-  label: Content
+  label: L'univers EUREKATIS
 - type: jekyll-posts
-  label: Posts
+  label: Mes prestations
   create: all
   templates:
   - post
 - type: jekyll-pages
-  label: Pages
+  label: Tarifs
   create: all
   templates:
   - landing-page
   - page
 - type: directory
   path: _people
-  label: People
+  label: A propos
   create: all
   match: "*"
   templates:
@@ -33,7 +33,7 @@ sections:
   - project
 - type: document
   path: _data/information.yml
-  label: Contact Information
+  label: 'Contact '
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
