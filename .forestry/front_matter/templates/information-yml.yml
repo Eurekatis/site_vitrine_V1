@@ -2,50 +2,49 @@
 label: Contact Information
 hide_body: true
 fields:
+- name: nom_prenom_
+  type: text
+  config:
+    required: true
+  label: NOM Prénom ou Société
 - name: email
-  label: Email
   type: text
   hidden: false
   default: ''
-- name: phone
-  label: Phone
+  label: Mail de contact
+  description: Obligatoire
+  config:
+    required: true
+- name: Telephone
   type: text
   hidden: false
   default: ''
-- name: address_1
-  label: Address 1
+  label: Téléphone de contact
+- name: Adresse_1
   type: text
   hidden: false
   default: ''
-- name: address_2
-  label: Address 2
-  type: text
-  hidden: false
-  default: ''
-- name: city
-  label: City
-  type: text
-  hidden: false
-  default: ''
-- name: state
-  label: State
-  type: text
-  hidden: false
-  default: ''
+  label: Adresse de contact
 - name: postal_code
-  label: Postal code
   type: text
   hidden: false
   default: ''
-- name: country
-  label: Country
+  config:
+    required: true
+  label: Code postal
+- name: Vile
   type: text
   hidden: false
   default: ''
-- name: twitter
-  label: Twitter
+  label: Ville
+  config:
+    required: true
+- name: Pays
   type: text
   hidden: false
   default: ''
+  label: Pays
+  config:
+    required: false
 pages:
 - _data/information.yml
